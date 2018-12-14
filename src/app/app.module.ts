@@ -18,6 +18,9 @@ import { DescriptionComponent } from './classroom/description/description.compon
 import { DiscussionComponent } from './classroom/discussion/discussion.component';
 import { ContentComponent } from './classroom/content/content.component';
 import { VirtualChatComponent } from './virtual-classroom/virtual-chat/virtual-chat.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MaterialModule } from './material';
+//import { MatSidenavModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -36,11 +39,15 @@ import { VirtualChatComponent } from './virtual-classroom/virtual-chat/virtual-c
     DescriptionComponent,
     DiscussionComponent,
     ContentComponent,
-    VirtualChatComponent
+    VirtualChatComponent,
+    //MatSidenavModule,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    //MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
