@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>VirtualBoi</span>
+    <span class="example-spacer"></span>
+    <button style="margin: 15px"mat-raised-button (click)="login.toggle()">
+      Iniciar Sesion
+    </button>
+    <button mat-raised-button (click)="signup.toggle()">
+      Crear Usuario
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" autosize >
+  <mat-drawer #login class="example-sidenav" mode="side" position="end">
+    <app-log-in></app-log-in>
+  </mat-drawer>
+  <mat-drawer #signup class="example-sidenav" mode="side" position="end">
+    <app-sign-up></app-sign-up>
+  </mat-drawer>
+</mat-drawer-container>
+

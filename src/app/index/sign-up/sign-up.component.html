@@ -1,3 +1,35 @@
-<p>
-  sign-up works!
-</p>
+<div class="form-container">
+  <p class="userText" style="font-size: 40px">
+      Crear Usuario   
+  </p>  
+  
+  <mat-form-field appearance="outline">
+    <mat-label>Usuario</mat-label>
+    <input matInput placeholder="Ingrese nombre de usuario">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint>minimo 8 caracteres</mat-hint>
+  </mat-form-field>
+  
+  <mat-form-field appearance="outline">
+    <mat-label>Correo Electronico</mat-label>
+    <input matInput placeholder="Escriba su correo electronico">
+    <mat-icon matSuffix>email</mat-icon>
+    <mat-hint>escriba un correo valido</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Contraseña</mat-label>
+    <input type="password" matInput placeholder="Escriba su contraseña">
+    <mat-icon matSuffix>https</mat-icon>
+    <mat-hint>minimo 8 caracteres</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Repita la Contraseña</mat-label>
+    <input type="password" matInput placeholder="Repita su contraseña">
+    <mat-icon matSuffix>https</mat-icon>
+    <mat-hint>escriba la misma contraseña</mat-hint>
+  </mat-form-field>
+
+  <mat-slide-toggle style="padding-left: 10%; padding-top: 10%">Ingresar como profesor</mat-slide-toggle>
+</div>
