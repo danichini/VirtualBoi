@@ -1,0 +1,10 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 33%
+}
+
+.userText{
+  border: 2px solid white; 
+  border-width: 10vh;
+}
