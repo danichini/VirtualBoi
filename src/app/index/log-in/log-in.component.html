@@ -2,17 +2,19 @@
   <p class="userText" style="font-size: 40px">
       Iniciar Sesion
   </p>  
-  
+
   <mat-form-field appearance="outline">
     <mat-label>Usuario</mat-label>
-    <input matInput placeholder="Ingrese nombre de usuario">
+    <input matInput placeholder="Ingrese nombre de usuario" #nameInput>
     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
   </mat-form-field>
 
   <mat-form-field appearance="outline">
     <mat-label>Contraseña</mat-label>
-    <input type="password" matInput placeholder="Escriba su contraseña">
+    <input type="password" matInput placeholder="Escriba su contraseña" #passwordInput>
     <mat-icon matSuffix>https</mat-icon>
   </mat-form-field>
+
+  <button (click)="onSubmit(nameInput.value, passwordInput.value)">Click me!</button>
 
 </div>
